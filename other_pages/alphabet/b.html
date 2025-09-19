@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ანბანეთი</title>
+  <link rel="stylesheet" href="../../styles/styles-page2.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <img src="../../images/logo.png" alt="ლოგო" class="logo">
+      <a href="../../index.html" data-en="Anbaneti" data-ka="ანბანეთი">ანბანეთი</a>
+    </div>
+      <nav>
+        <a href="../alphabet.html" data-en="Alphabet" data-ka="ანბანი">ანბანი</a>
+        <a href="../library.html" data-en="Library" data-ka="ბიბლიოთეკა">ბიბლიოთეკა</a>
+        <a href="../games.html" data-en="Games" data-ka="თამაშები">თამაშები</a>
+        <a href="../community.html" data-en="Popular people" data-ka="ცნობილი ხალხი">ცნობილი ხალხი</a>
+      </nav>
+    <div class="lang-switch">
+      <img src="../../images/georgia.png" alt="ქართული" class="flag" onclick="switchLanguage('ka')">
+      <img src="../../images/usa.png" alt="English" class="flag" onclick="switchLanguage('en')">
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+
+  <section>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <footer>
+    <div class="footer container">
+      <div class="column">
+        <p data-en="The goal of this website is to introduce the public to Georgian writing and works." data-ka="ამ ვებსაიტის მიზანია გააცნოს საზოგადოებას ქართული დამწერლობა და ნამუშევრები">ამ ვებსაიტის მიზანია გააცნოს საზოგადოებას ქართული დამწერლობა და ნამუშევრები</p>
+        <div class="logos">
+          <a href="https://www.facebook.com/nanu.kupreishvili">
+            <img src="../../images/facebook-app-round-white-icon.svg" alt="fb logo" class="logos">
+          </a>
+          <a href="https://github.com/naanukkaa">
+            <img src="../../images/github2.png" alt="google logo" class="logos">
+          </a>
+          <a href="https://tbcbank.ge/ka/tbc-education">
+            <img src="../../images/instagram-white-icon.svg" alt="tbc logo" class="logos">
+          </a>
+        </div>
+      </div>
+      <div class="column2">
+        <a href="../index.html" class="column-a">მთავარი</a>
+        <a href="../alphabet.html" class="column-a">ანბანი</a>
+        <a href="../library.html" class="column-a">ბიბლიოთეკა</a>
+        <a href="../games.html" class="column-a">თამაშები</a>
+        <a href="../community.html" class="column-a">ცნობილი ადამიანები</a>
+        <a href="../contact.html" class="column-a">კონტაქტი</a>
+      </div>
+      <div class="column2">
+        <a href="../contact.html" class="column-title">კონტაქტი</a>
+        <div class="info-logo">
+            <img width="38" height="38" src="https://img.icons8.com/sf-regular/48/FFFFFF/new-post.png" alt="mail"/>
+            <p>nanukakupreishvili4@gmail.com</p>
+        </div>
+        <div class="info-logo">
+            <img width="30" height="30" src="../../images/instagram-white-icon.svg" alt="phone"/>
+            <a href="https://www.instagram.com/_nanuukkaa_/">_nanuukkaa_</a>
+        </div>
+        <div class="info-logo">
+            <img width="30" height="30" src="../../images/facebook-app-round-white-icon.svg" alt="fb" class="fb-logo"/>
+            <a href="https://www.facebook.com/nanu.kupreishvili">Nana Kupreishvili </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="social-sidebar">
+    <a href="https://www.facebook.com/nanu.kupreishvili" target="_blank" class="social-icon" title="Facebook">
+      <img class="bi bi-facebook" src="../../images/facebook-app-round-white-icon.svg" alt="Facebook">
+    </a>
+    <a href="https://github.com/naanukkaa" target="_blank" class="social-icon" title="Google">
+      <img class="bi bi-google" src="../../images/github2.png" alt="Google">
+    </a>
+    <a href="https://www.instagram.com/_nanuukkaa_/" target="_blank" class="social-icon" title="TBC Bank">
+      <img src="../../images/instagram-white-icon.svg" alt="TBC" class="tbc-logo-two">
+    </a>
+  </div>
+  </footer>
+
+  <script>
+    function playAudio(letter) {
+      const audio = new Audio(`audio/${letter}.mp3`);
+      audio.play();
+    }
+
+    function switchLanguage(lang) {
+      const elements = document.querySelectorAll('[data-en]');
+      elements.forEach(el => {
+        if(lang === 'en') {
+          el.innerText = el.getAttribute('data-en');
+        } else if(lang === 'ka') {
+          el.innerText = el.getAttribute('data-ka');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

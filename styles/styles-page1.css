@@ -82,6 +82,7 @@ nav a {
    HERO
 --------------------------------*/
 .hero {
+  margin-top: 12px;
   text-align: center;
   padding: 120px 16px;
   background-image: url('../images/banner.jpg');
@@ -256,8 +257,8 @@ form button:hover {
   height: 392px;
   background-color: #6b21a8;
   color: white;
-  width: 100%;
-  padding: 40px 230px;
+  width: auto;
+  padding: 40px 220px;
   display: flex;
   flex-direction: row;
 }
@@ -267,8 +268,7 @@ form button:hover {
   flex-direction: column;
   font-size: 20px;
   font-weight: 700;
-  width: 200px;
-  margin-right: 200px;
+  width: 400px;
 }
 
 .column2{
@@ -278,28 +278,31 @@ form button:hover {
   font-weight: 700; 
   margin-bottom: 5px;
   width: 300px;
-  margin-right: 150px;
+  margin-left: 150px;
+  margin-top: 20px;
 }
 
 .logos{
-  margin-top: 40px;
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 10px;
-  height: 58px;
-  width: 58px;
+  gap: 15px;
+  height: 48px;
+  width: 48px;
 }
 
-.tbc-logo{
-  height: 52px;
-  width: 50px;
+.column2 a{
+  color: white;
+  text-decoration: none;
 }
 
 .column-a{
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 15px;
+  color: white;
+  text-decoration: none;
 }
 
 .info-logo{
@@ -308,6 +311,15 @@ form button:hover {
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 30px;
+}
+
+.info-logo a{
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-decoration: none;
 }
 
 .column-title{
@@ -323,7 +335,7 @@ form button:hover {
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  background-color: #084c4c;
+  background-color: #6b21a8;
   padding: 8px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -340,7 +352,7 @@ form button:hover {
 }
 
 .social-icon:hover {
-  background-color: #358585;
+  background-color: #842ace;
   transform: scale(1.1);
   border-radius: 5px;
   padding: 5px;

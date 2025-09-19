@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ანბანეთი</title>
+  <link rel="stylesheet" href="styles/styles-page1.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <img src="images/logo.png" alt="ლოგო" class="logo">
+      <h1 data-en="Anbaneti" data-ka="ანბანეთი">ანბანეთი</h1>
+    </div>
+      <nav>
+        <a href="other_pages/alphabet.html" data-en="Alphabet" data-ka="ანბანი">ანბანი</a>
+        <a href="other_pages/library.html" data-en="Library" data-ka="ბიბლიოთეკა">ბიბლიოთეკა</a>
+        <a href="other_pages/games.html" data-en="Games" data-ka="თამაშები">თამაშები</a>
+        <a href="other_pages/community.html" data-en="Popular people" data-ka="ცნობილი ხალხი">ცნობილი ხალხი</a>
+      </nav>
+    <div class="lang-switch">
+      <img src="images/georgia.png" alt="ქართული" class="flag" onclick="switchLanguage('ka')">
+      <img src="images/usa.png" alt="English" class="flag" onclick="switchLanguage('en')">
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2 data-en="Explore Georgian Alphabet and Literature" data-ka="გამოიკვლიე ქართული ანბანი და მწერლობა">
+      გამოიკვლიე ქართული ანბანი და მწერლობა
+    </h2>
+    <p data-en="Learn letters, discover writers, play games and share your works."
+       data-ka="ისწავლე ასოები, გაეცანი მწერლებს, ითამაშე და გაუზიარე შენი ნამუშევრები სხვებს.">
+      ისწავლე ასოები, გაეცანი მწერლებს, ითამაშე და გაუზიარე შენი ნამუშევრები სხვებს.
+    </p>
+  </section>
+
+  <!-- Alphabet Section -->
+  <section id="alphabet">
+    <h3 data-en="Georgian Alphabet" data-ka="ქართული ანბანი">ქართული ანბანი</h3>
+    <a href="other_pages/alphabet.html" data-en="learn more" data-ka="მეტი ასოები">მეტი ასოები</a>
+    <div class="letters">
+      <div class="letter-card" onclick="playAudio('a')">ა</div>
+      <div class="letter-card" onclick="playAudio('b')">ბ</div>
+      <div class="letter-card" onclick="playAudio('g')">გ</div>
+      <div class="letter-card" onclick="playAudio('d')">დ</div>
+      <div class="letter-card" onclick="playAudio('e')">ე</div>
+      <div class="letter-card" onclick="playAudio('v')">ვ</div>
+      <div class="letter-card" onclick="playAudio('z')">ზ</div>
+      <!-- დანარჩენი ასოები -->
+    </div>
+  </section>
+
+  <!-- Library Section -->
+  <section id="library">
+    <h3 data-en="Digital Library of Writers" data-ka="მწერლების ციფრული ბიბლიოთეკა">
+      მწერლების ციფრული ბიბლიოთეკა
+    </h3>
+    <a href="other_pages/library.html" data-en="explore more writers" data-ka="მეტი მწერალი">მეტი მწერალი</a>
+    <div class="writer">
+      <h4 data-en="Shota Rustaveli" data-ka="შოთა რუსთაველი">შოთა რუსთაველი</h4>
+      <p data-en="'The Knight in the Panther's Skin' - A Georgian epic masterpiece."
+         data-ka="„ვეფხისტყაოსანი“ - ქართული ეპოსის შედევრი, სადაც სიყვარულისა და ვაჟკაცობის თემები უკვდავია.">
+        „ვეფხისტყაოსანი“ - ქართული ეპოსის შედევრი, სადაც სიყვარულისა და ვაჟკაცობის თემები უკვდავია.
+      </p>
+    </div>
+    <div class="writer">
+      <h4 data-en="Vaja-Pshavela" data-ka="ვაჟა-ფშაველა">ვაჟა-ფშაველა</h4>
+      <p data-en="Biography, works, and analyses of one of Georgia's greatest poets."
+         data-ka="ბიოგრაფია, ნაწარმოებები და ანალიზები — ერთ-ერთი უდიდესი ქართული პოეტი.">
+        ბიოგრაფია, ნაწარმოებები და ანალიზები — ერთ-ერთი უდიდესი ქართული პოეტი.
+      </p>
+    </div>
+  </section>
+
+  <!-- Games Section -->
+  <section id="games">
+    <h3 data-en="Games and Quizzes" data-ka="თამაშები და ტესტები">თამაშები და ტესტები</h3>
+    <p class="coming" data-en="Coming soon: word games, alphabet quizzes, and more."
+       data-ka="მალე დაემატება: სიტყვების შეკრების თამაში, ანბანის გამოცნობა და სხვა.">
+      მალე დაემატება: სიტყვების შეკრების თამაში, ანბანის გამოცნობა და სხვა.
+    </p>
+  </section>
+
+  <!-- Community Section -->
+  <section id="community">
+    <h3 data-en="Community Engagement" data-ka="მომხმარებელთა ჩართულობა">მომხმარებელთა ჩართულობა</h3>
+    <form>
+      <label for="upload" data-en="Upload your work:" data-ka="ატვირთე შენი ნამუშევარი:">ატვირთე შენი ნამუშევარი:</label>
+      <input type="file" id="upload" name="upload">
+      <button type="submit" data-en="Submit" data-ka="გაგზავნა">გაგზავნა</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p data-en="© 2025 Anbaneti | Promoting Georgian Alphabet and Literature"
+       data-ka="© 2025 ანბანეთი | ქართული ანბანისა და მწერლობის პოპულარიზაცია">
+      © 2025 ანბანეთი | ქართული ანბანისა და მწერლობის პოპულარიზაცია
+    </p>
+  </footer>
+
+  <script>
+    function playAudio(letter) {
+      const audio = new Audio(`audio/${letter}.mp3`);
+      audio.play();
+    }
+
+    function switchLanguage(lang) {
+      const elements = document.querySelectorAll('[data-en]');
+      elements.forEach(el => {
+        if(lang === 'en') {
+          el.innerText = el.getAttribute('data-en');
+        } else if(lang === 'ka') {
+          el.innerText = el.getAttribute('data-ka');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

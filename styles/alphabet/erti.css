@@ -138,46 +138,23 @@ section a:hover {
 /* ------------------------------
    ALPHABET
 --------------------------------*/
-.letters {
-  margin-left: 80px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 36px;
-  justify-items: center;
+.letter-section {
+  text-align: center;
+  padding: 80px 16px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 40px auto;
+  max-width: 800px;
 }
 
-.letter-card {
-  background-color: #ede9fe;
-  color: #6b21a8;
-  width: 156px;
-  height: 156px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 16px;
-  font-weight: bold;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  cursor: pointer;
-  transition: transform 0.3s, background 0.3s;
-}
 
-.letter-card:hover {
-  background-color: #ddd6fe;
-  transform: scale(1.1) rotate(-3deg);
-}
 
-.letter-card a {
-  font-size: 72px;
-  text-decoration: none;
-  color: #6b21a8;
-}
 /* ------------------------------
    FOOTER
 --------------------------------*/
 .footer{
   height: 392px;
-  width: auto;
   background-color: #6b21a8;
   color: white;
   width: auto;

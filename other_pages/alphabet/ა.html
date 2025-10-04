@@ -36,10 +36,19 @@
   
   <!-- Letter Section -->
   <section class="letter-section">
-    <div class="first-letter">
-      <button onclick="playAudio('a')" class="audio-button">
-        <h1>ა</h1>
-      </button>
+    <h1  data-en="click the video to hear how to say letter 'a'." data-ka="დააჭირეთ ვიდეოს რათა გაიგოთ როგორ წარმოითქმება ასო 'ა'.">დააჭირეთ ვიდეოს რათა გაიგოთ როგორ წარმოითქმება ასო 'ა'.</h1>
+    <div class="center-box">
+      <div class="side-images">
+        <img src="../../images/alphabet/a/alubali.png" class="side-img" alt="alubali">
+        <img src="../../images/alphabet/a/aqlemi.png" class="side-img" alt="aqlemi">
+      </div>
+      <div class="center-video">
+        <video src="../../ედიტ/ა.mp4" class="centered-video" onclick="this.play()" width="260" height="260" style="cursor:pointer; border-radius:16px; box-shadow:0 4px 16px rgba(0,0,0,0.15);"></video>
+      </div>
+      <div class="side-images">
+        <img src="../../images/alphabet/a/atami.png" class="side-img" alt="atami">
+        <img src="../../images/alphabet/a/avtobusi.png" class="side-img" alt="avtobusi">
+      </div>
     </div>
   </section>
 
@@ -105,6 +114,17 @@
       const audio = new Audio(`audio/${letter}.mp3`);
       audio.play();
     }
+    // Add sound to video when clicked
+    document.addEventListener('DOMContentLoaded', function() {
+      var video = document.querySelector('.centered-video');
+      if (video) {
+        video.addEventListener('click', function() {
+          this.play();
+          var audio = new Audio('../../audio/ა.mp3');
+          audio.play();
+        });
+      }
+    });
 
     function switchLanguage(lang) {
       const elements = document.querySelectorAll('[data-en]');

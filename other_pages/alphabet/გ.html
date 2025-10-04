@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ანბანეთი</title>
-  <link rel="stylesheet" href="../../styles/styles-page2.css">
+  <link rel="stylesheet" href="../../styles/alphabet/erti.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,16 +33,29 @@
       <img src="../../images/usa.png" alt="English" class="flag" onclick="switchLanguage('en')">
     </div>
   </header>
-
-  <!-- Hero Section -->
-
-  <section>
+  
+  <!-- Letter Section -->
+  <section class="letter-section">
+    <h1  data-en="click the video to hear how to say letter 'g'." data-ka="დააჭირეთ ვიდეოს რათა გაიგოთ როგორ წარმოითქმება ასო 'გ'.">დააჭირეთ ვიდეოს რათა გაიგოთ როგორ წარმოითქმება ასო 'გ'.</h1>
+    <div class="center-box">
+      <div class="side-images">
+        <img src="../../images/alphabet/გ/gasagebi.png" class="side-img" alt="გასაღები">
+        <img src="../../images/alphabet/გ/gemi.png" class="side-img" alt="გემი">
+      </div>
+      <div class="center-video">
+        <video src="../../video/გ.mp4" class="centered-video" onclick="this.play()" width="260" height="260" style="cursor:pointer; border-radius:16px; box-shadow:0 4px 16px rgba(0,0,0,0.15);"></video>
+      </div>
+      <div class="side-images">
+  <img src="../../images/alphabet/გ/gogra.png" class="side-img" alt="გოგრა">
+  <img src="../../images/alphabet/გ/globusi.png" class="side-img" alt="გლობუსი">
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <footer>
-    <div class="footer container">
+    <div class="footer">
       <div class="column">
         <p data-en="The goal of this website is to introduce the public to Georgian writing and works." data-ka="ამ ვებსაიტის მიზანია გააცნოს საზოგადოებას ქართული დამწერლობა და ნამუშევრები">ამ ვებსაიტის მიზანია გააცნოს საზოგადოებას ქართული დამწერლობა და ნამუშევრები</p>
         <div class="logos">
@@ -97,10 +110,26 @@
   </footer>
 
   <script>
-    function playAudio(letter) {
-      const audio = new Audio(`audio/${letter}.mp3`);
-      audio.play();
-    }
+    // Play audio for each image using its alt attribute
+    document.addEventListener('DOMContentLoaded', function() {
+      var images = document.querySelectorAll('.side-img');
+      images.forEach(function(img) {
+        img.addEventListener('click', function() {
+          var letter = img.getAttribute('alt');
+          var audio = new Audio(`${window.location.origin}/audio/გ/${letter}.mp3`);
+          audio.play();
+        });
+      });
+
+      var video = document.querySelector('.centered-video');
+      if (video) {
+        video.addEventListener('click', function() {
+          this.play();
+          var audio = new Audio(`${window.location.origin}/audio/გ/გ.mp3`);
+          audio.play();
+        });
+      }
+    });
 
     function switchLanguage(lang) {
       const elements = document.querySelectorAll('[data-en]');

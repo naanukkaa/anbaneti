@@ -148,6 +148,13 @@ section a:hover {
   max-width: 1200px;
 }
 
+.letter-section h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #4f46e5;
+  margin-bottom: 24px;
+}
+
 .center-box {
   display: flex;
   justify-content: center;
@@ -155,8 +162,8 @@ section a:hover {
   margin: 20px 0;
 }
 .side-img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   margin: 18px;
   border-radius: 12px;
@@ -173,8 +180,8 @@ section a:hover {
   display: block;
   margin: 0 auto;
   background: #f8f8f8;
-  width: 370px;
-  height: 640px;
+  width: 310px;
+  height: 540px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);

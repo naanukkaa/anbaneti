@@ -116,7 +116,7 @@
       images.forEach(function(img) {
         img.addEventListener('click', function() {
           var letter = img.getAttribute('alt');
-          var audio = new Audio(`${window.location.origin}/audio/a/${letter}.mp3`);
+          var audio = new Audio(`../../audio/a/${letter}.mp3`);
           audio.play();
         });
       });
@@ -125,7 +125,8 @@
       if (video) {
         video.addEventListener('click', function() {
           this.play();
-          var audio = new Audio(`${window.location.origin}/audio/a/a.mp3`);
+          var audio = new Audio(`../../audio/a/a.mp3`);
+
           audio.play();
         });
       }

@@ -39,15 +39,15 @@
     <h1  data-en="click the video to hear how to say letter 'a'." data-ka="დააჭირეთ ვიდეოს რათა გაიგოთ როგორ წარმოითქმება ასო 'ა'.">დააჭირეთ ვიდეოს რათა გაიგოთ როგორ წარმოითქმება ასო 'ა'.</h1>
     <div class="center-box">
       <div class="side-images">
-        <img src="../../images/alphabet/ა/alubali.png" class="side-img" alt="ალუბალი">
-        <img src="../../images/alphabet/ა/aqlemi.png" class="side-img" alt="აქლემი">
+        <img src="../../images/alphabet/მ/mta.png" class="side-img" alt="მთა">
+        <img src="../../images/alphabet/მ/mze.png" class="side-img" alt="მზე">
       </div>
       <div class="center-video">
-        <video src="../../video/ა.mp4" class="centered-video" onclick="this.play()" width="260" height="260" style="cursor:pointer; border-radius:16px; box-shadow:0 4px 16px rgba(0,0,0,0.15);"></video>
+        <video src="../../video/მ.mp4" class="centered-video" onclick="this.play()" width="260" height="260" style="cursor:pointer; border-radius:16px; box-shadow:0 4px 16px rgba(0,0,0,0.15);"></video>
       </div>
       <div class="side-images">
-  <img src="../../images/alphabet/ა/atami.png" class="side-img" alt="ატამი">
-  <img src="../../images/alphabet/ა/avtobusi.png" class="side-img" alt="ავტობუსი">
+  <img src="../../images/alphabet/მ/mtvare.png" class="side-img" alt="მთვარე">
+  <img src="../../images/alphabet/მ/mgeli.png" class="side-img" alt="მგელი">
       </div>
     </div>
   </section>
@@ -116,7 +116,7 @@
       images.forEach(function(img) {
         img.addEventListener('click', function() {
           var letter = img.getAttribute('alt');
-          var audio = new Audio(`../../audio/ა/${letter}.mp3`);
+          var audio = new Audio(`../../audio/მ/${letter}.mp3`);
           audio.play();
         });
       });
@@ -125,7 +125,7 @@
       if (video) {
         video.addEventListener('click', function() {
           this.play();
-          var audio = new Audio(`../../audio/ა/ა.mp3`);
+          var audio = new Audio(`../../audio/მ/მ.mp3`);
 
           audio.play();
         });

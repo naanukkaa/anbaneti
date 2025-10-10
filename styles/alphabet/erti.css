@@ -171,6 +171,17 @@ section a:hover {
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
   cursor: pointer;
 }
+
+.long {
+  width: 340px;
+  height: 250px;
+}
+
+.tall {
+  width: 250px;
+  height: 340px;
+}
+
 .side-img:hover {
   transform: scale(1.15) rotate(-8deg);
   box-shadow: 0 6px 24px rgba(0,0,0,0.18);

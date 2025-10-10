@@ -36,18 +36,18 @@
   
   <!-- Letter Section -->
   <section class="letter-section">
-    <h1  data-en="click the video to hear how to say letter 'a'." data-ka="დააჭირეთ ვიდეოს რათა გაიგოთ როგორ წარმოითქმება ასო 'ა'.">დააჭირეთ ვიდეოს რათა გაიგოთ როგორ წარმოითქმება ასო 'ა'.</h1>
+    <h1  data-en="click the video to hear how to say letter 'l'." data-ka="დააჭირეთ ვიდეოს რათა გაიგოთ როგორ წარმოითქმება ასო 'ლ'.">დააჭირეთ ვიდეოს რათა გაიგოთ როგორ წარმოითქმება ასო 'ლ'.</h1>
     <div class="center-box">
       <div class="side-images">
-        <img src="../../images/alphabet/ა/alubali.png" class="side-img" alt="ალუბალი">
-        <img src="../../images/alphabet/ა/aqlemi.png" class="side-img" alt="აქლემი">
+        <img src="../../images/alphabet/ლ/leptopi.png" class="side-img" alt="ლეპტოპი">
+        <img src="../../images/alphabet/ლ/limoni.png" class="side-img" alt="ლიმონი">
       </div>
       <div class="center-video">
-        <video src="../../video/ა.mp4" class="centered-video" onclick="this.play()" width="260" height="260" style="cursor:pointer; border-radius:16px; box-shadow:0 4px 16px rgba(0,0,0,0.15);"></video>
+        <video src="../../video/ლ.mp4" class="centered-video" onclick="this.play()" width="260" height="260" style="cursor:pointer; border-radius:16px; box-shadow:0 4px 16px rgba(0,0,0,0.15);"></video>
       </div>
       <div class="side-images">
-  <img src="../../images/alphabet/ა/atami.png" class="side-img" alt="ატამი">
-  <img src="../../images/alphabet/ა/avtobusi.png" class="side-img" alt="ავტობუსი">
+  <img src="../../images/alphabet/ლ/lokokina.png" class="side-img" alt="ლოკოკინა">
+  <img src="../../images/alphabet/ლ/lomi.png" class="side-img" alt="ლომი">
       </div>
     </div>
   </section>
@@ -116,7 +116,7 @@
       images.forEach(function(img) {
         img.addEventListener('click', function() {
           var letter = img.getAttribute('alt');
-          var audio = new Audio(`${window.location.origin}/audio/ა/${letter}.mp3`);
+          var audio = new Audio(`../../audio/ლ/${letter}.mp3`);
           audio.play();
         });
       });
@@ -125,7 +125,8 @@
       if (video) {
         video.addEventListener('click', function() {
           this.play();
-          var audio = new Audio(`${window.location.origin}/audio/ა/ა.mp3`);
+          var audio = new Audio(`../../audio/ლ/ლ.mp3`);
+
           audio.play();
         });
       }
